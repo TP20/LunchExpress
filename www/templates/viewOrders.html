@@ -1,0 +1,21 @@
+<ion-view title="Orders"  align-title="center" name="tab-viewOrder">
+  <ion-nav-bar class="bar-energized">
+    <ion-nav-buttons side="left">
+      <button ui-sref="loginPage" class="button ion-chevron-left button-clear">  </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item class="item" ng-repeat="value in placedOrderList">
+        <u> <b> {{value.name}} </b> </u>
+        <div ng-repeat="val2 in value.orders">
+          <p style="font-style:italic"> {{$index+1}}) {{val2.item}} </p>
+        </div>
+      </ion-item>
+    </ion-list>
+    <ion-item ng-hide= "setVisibility.text()"> Please place an order </ion-item>
+    <button ng-click="clearPlacedOrderList()" ng-hide="setVisibility.clearButton()" style="margin:0px auto; top:20px; display:block; float:none" class="button button-assertive">
+      Clear List
+    </button>
+  </ion-content>
+</ion-view>

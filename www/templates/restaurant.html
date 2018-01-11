@@ -1,0 +1,18 @@
+<ion-view view-title="Select Restaurant">
+  <ion-nav-bar align-title="center" class="bar-energized">
+    <ion-nav-buttons side="right">
+      <button ng-controller="LoginCtrl" ng-hide="!isAdminUser()" class="button button-clear ion-plus" ng-click="addRestaurant()"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="left">
+      <button class="button ion-chevron-left button-clear" ui-sref="loginPage"></button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content class="has-header">
+    <div class="list card" ui-sref="tabs.menu" ng-click = "setRestaurant(val.name); showInstructions();" ng-repeat= "val in restaurantList">
+      <a class="item item-thumbnail-left" href="#">
+       <img src={{val.image}}>
+       <h2>{{val.name}}</h2>
+     </a>
+   </div>
+  </ion-content>
+</ion-view>

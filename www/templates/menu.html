@@ -1,0 +1,46 @@
+<ion-view name ="tab-menu">
+    <ion-nav-bar class="bar-energized">
+       <ion-nav-buttons side="left">
+         <button ui-sref="restaurantPage" class="button ion-chevron-left button-clear">  </button>
+       </ion-nav-buttons>
+       <ion-nav-buttons side="right">
+         <button ng-controller="LoginCtrl" ng-hide="!isAdminUser()" class="button button-clear ion-plus" ng-click="addItemList()"></button>
+       </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content class="has-header">
+        <ion-list>
+           <ion-item class="item item-icon-right" can-swipe="true"  ng-repeat="val in menu()">
+             <b>{{val.item}} </b> <br>
+             <span style ="float:left" class="item-note">
+               ${{val.price}}
+            </span>
+            <i style ="color: #F37711" ng-click="openModal(val)" class="icon ion-more"></i>
+            <ion-option-button class="button-assertive" ng-click="add(val);">
+              Add to Cart
+            </ion-option-button>
+          </ion-item>
+        </ion-list>
+        <ion-item ng-hide= "setVisibility()"> Menu items do not exist </ion-item>
+        <script id="my-modal.html" type="text/ng-template">
+           <ion-modal-view view-title="Add Restaurant">
+             <ion-header-bar class="bar-energized">
+               <h1 class="title">Details</h1>
+               <button class="button button-clear ion-close" ng-click="closeModal()"></button>
+             </ion-header-bar>
+             <ion-content class="has-header">
+               <div class="list card">
+                 <div class="item item-body">
+                   <img class="full-image" src="img/lunchex.png">
+                   <p>
+                     Item: {{foodItem.item}} <br>
+                     Cost: ${{foodItem.price}} <br>
+                     Type: (TBD) <br>
+                     Description: (TBD)
+                   </p>
+                 </div>
+               </div>
+             </ion-content>
+           </ion-modal-view>
+         </script>
+    </ion-content>
+  </ion-view>

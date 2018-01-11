@@ -1,0 +1,22 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Users/owner/Cordova/todo/plugins/cordova-plugin-device/src/windows/DeviceProxy.js",
+        "C:/Users/owner/Cordova/todo/plugins/cordova-plugin-device/tests/tests.js",
+        "C:/Users/owner/Cordova/todo/plugins/cordova-plugin-device/www/device.js",
+        "C:/Users/owner/Cordova/todo/plugins/cordova-plugin-splashscreen/src/blackberry10/index.js",
+        "C:/Users/owner/Cordova/todo/plugins/cordova-plugin-splashscreen/src/browser/SplashScreenProxy.js",
+        "C:/Users/owner/Cordova/todo/plugins/cordova-plugin-splashscreen/src/tizen/SplashScreenProxy.js",
+        "C:/Users/owner/Cordova/todo/plugins/cordova-plugin-splashscreen/tests/tests.js",
+        "C:/Users/owner/Cordova/todo/plugins/cordova-plugin-splashscreen/www/windows/SplashScreenProxy.js",
+        "C:/Users/owner/Cordova/todo/plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "C:/Users/owner/Cordova/todo/plugins/cordova-plugin-statusbar/src/browser/statusbar.js",
+        "C:/Users/owner/Cordova/todo/plugins/cordova-plugin-statusbar/src/windows/StatusBarProxy.js",
+        "C:/Users/owner/Cordova/todo/plugins/cordova-plugin-statusbar/tests/tests.js",
+        "C:/Users/owner/Cordova/todo/plugins/cordova-plugin-statusbar/www/statusbar.js",
+        "C:/Users/owner/Cordova/todo/plugins/ionic-plugin-keyboard/src/blackberry10/index.js",
+        "C:/Users/owner/Cordova/todo/plugins/ionic-plugin-keyboard/src/windows/KeyboardProxy.js",
+        "C:/Users/owner/Cordova/todo/plugins/ionic-plugin-keyboard/www/android/keyboard.js",
+        "C:/Users/owner/Cordova/todo/plugins/ionic-plugin-keyboard/www/browser/keyboard.js",
+        "C:/Users/owner/Cordova/todo/plugins/ionic-plugin-keyboard/www/ios/keyboard.js"
+    ]
+}

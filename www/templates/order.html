@@ -1,0 +1,25 @@
+<ion-view>
+  <ion-nav-bar class="bar-energized">
+    <ion-nav-buttons side="left">
+      <button ui-sref="restaurantPage" class="button ion-chevron-left button-clear">  </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content class="has-header">
+      <ion-list>
+        <ion-item class="item" can-swipe="true" ng-repeat="val in cartList.getList()">
+           <b>  {{val.item}} </b> <br>
+          <span style ="float:left" class="item-note">
+            ${{val.price}}
+          </span>
+          <ion-option-button class="button-assertive" ng-click="cartList.remove(val); menuList.add(val); cost.deduct(val.price);">
+            Remove
+          </ion-option-button>
+        </ion-item>
+      </ion-list>
+      <ion-item ng-hide= "setVisibility.totalAmountText()"> Total: ${{cost.getTotal().toFixed(2)}}   </ion-item>
+      <ion-item ng-hide="setVisibility.amountNullText()"> You have not selected an Item </ion-item>
+      <button ng-hide="setVisibility.totalAmountText()" ng-click="placeOrder()" style=" float:right; display:block; margin:15px" class="button button-assertive">
+              Place Order
+      </button>
+  </ion-content>
+</ion-view>

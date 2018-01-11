@@ -1,0 +1,26 @@
+<ion-view>
+  <ion-content scroll="false">
+    <div style ="margin:0px auto; margin-top:20%; float:none; width:200px; height:150px;">
+      <img height="200" width ="200" src="img/lunchex.png" >
+    </div>
+    <div class="list list-inset">
+      <div class="list" style="width:80%; margin:0px auto; margin-bottom: 10px; float:none">
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Login As:
+          </div>
+          <select ng-model= "user" ng-change="setUser(user)">
+            <option selected>Admin</option>
+            <option>Regular User</option>
+          </select>
+        </label>
+      </div>
+      <button style="padding:5px; width:80%; margin:0px auto; float:none" ui-sref="restaurantPage" class="button button-block button-outline button-energized">
+        Place Order
+      </button>
+      <button  style="padding:5px; width:80%; margin:0px auto; margin-top: 10px; float:none" ui-sref="viewOrders" class="button button-block button-outline button-energized">
+        View Orders
+      </button>
+    </div>
+  </ion-content>
+</ion-view>
